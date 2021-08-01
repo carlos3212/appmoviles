@@ -12,7 +12,8 @@
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
-    "postinstall": "npm run build"
+    "postinstall": "npm i typescript && npm run tsc"
+  
    
        
   },
