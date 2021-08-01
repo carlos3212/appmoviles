@@ -11,9 +11,8 @@
   
   "scripts": {
     "start": "node dist/index.js",
-    
-   "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript"
-    
+    "build": "tsc"
+   
        
   },
 
