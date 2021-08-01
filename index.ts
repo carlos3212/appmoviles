@@ -12,7 +12,7 @@ server.app.use('/user',userRoutes)
 
 //conexion con mongoDB utilizando mongose
 //mongoose.connect('mongodb://localhost:27017/tienda',{
- mongoose.connect('mongodb+srv://cocoa:Programar.1234@cluster0.azijh.mongodb.net/appMoviles',{
+ mongoose.connect('mongodb+srv://cocoa:Programar.1234@cluster0.azijh.mongodb.net/tienda',{
     useNewUrlParser: true, useCreateIndex: true},(err)=>{
         if(err)throw err;
         console.log('Base de datos online')
