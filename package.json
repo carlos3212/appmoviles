@@ -2,6 +2,10 @@
   "name": "server_express",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "15.5.1",
+    "npm":"7.3.0"
+  },
   "main": "index.js",
   
   "scripts": {
