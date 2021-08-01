@@ -11,11 +11,10 @@
   
   "scripts": {
     "start": "node dist/index.js",
-    "build": "tsc",
-    "postinstall": "npm run build"
-    
-    
+    "build": "tsc"
+       
   },
+
   "keywords": [],
   "author": "",
   "license": "ISC",

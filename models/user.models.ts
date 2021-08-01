@@ -23,12 +23,21 @@ const usuarioSchema= new Schema <IUsuario>({
 
 });
 //metodo de comparación
+usuarioSchema.method('compararPassword', function(password: string =''): boolean{
+if(bcrypt.compareSync(password, this.password)){
+    return true;
+}
+else{
+    return false;
+}
+});
+
 export interface IUsuario extends Document{
-nombre:String;
-email: String;
-password: String;
-avatar: String;
-compararPassword(password: string): boolean;
+nombre:string;
+email: string;
+password: string;
+avatar: string;
+compararPassword(password: String): boolean;
 }
 
 export const Usuario= model<IUsuario>('Usuario',usuarioSchema);
